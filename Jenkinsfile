@@ -22,7 +22,10 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh 'pytest tests/'
+                script {
+                    // Run tests inside the Docker container
+                    sh "docker run --rm ${IMAGE_NAME}:${IMAGE_TAG} pytest tests/"
+                }
             }
         }
         

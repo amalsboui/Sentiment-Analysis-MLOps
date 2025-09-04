@@ -7,7 +7,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Models
-/models/*.pkl
+#/models/*.pkl
 
 # Environment
 env/

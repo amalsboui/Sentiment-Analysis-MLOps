@@ -8,14 +8,14 @@ pipeline {
         stage('Train Model') {
             steps {
                 echo "Training the model..."
-                sh 'python3 train.py'
+                sh 'python3 Scripts/train.py'
             }
         }
 
         stage('Upload Model') {
             steps {
                 echo "Uploading model and vectorizer to Azure Blob..."
-                sh 'python3 upload_model.py'
+                sh 'python3 Scripts/upload_model.py'
             }
         }
     }

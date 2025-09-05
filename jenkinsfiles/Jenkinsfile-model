@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    environment {
+        DOCKERHUB_CREDENTIALS = 'dockerhub-creds'
+        AZURE_STORAGE_CONNECTION_STRING = credentials('AZURE_STORAGE_CONNECTION_STRING')
+    }
+    stages {
+        stage('Upload Model') {
+            steps {
+                echo "Uploading model and vectorizer to Azure Blob..."
+                sh 'python3 upload_model.py'
+            }
+        }
+    }
+    post {
+        success {
+            echo "Upload completed successfully."
+        }
+        failure {
+            echo "Upload failed."
+        }
+    }
+}

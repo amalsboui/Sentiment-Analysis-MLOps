@@ -23,8 +23,8 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh '''
-                    pip install --user -r requirements.txt
-                    export PATH=$HOME/.local/bin:$PATH
+                    pip install -r requirements.txt pytest httpx
+                    export PYTHONPATH=$PWD
                     pytest tests/
                 '''
             }

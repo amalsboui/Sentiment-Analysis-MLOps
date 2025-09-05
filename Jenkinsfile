@@ -14,9 +14,15 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
+        stage('Check Changes') {
             steps {
-                sh 'pip install -r requirements.txt'
+                script {
+                    if (sh(script: "git diff --name-only HEAD~1 HEAD | grep -E 'FastAPI/|train.py|requirements.txt'", returnStatus: true) != 0) {
+                        echo "No relevant changes. Skipping build."
+                        currentBuild.result = 'SUCCESS'
+                        return
+                    }
+                }
             }
         }
 
@@ -30,7 +36,7 @@ pipeline {
                 '''
             }
         }
-        
+
         stage('Build Docker Image') {
             steps {
                 script {

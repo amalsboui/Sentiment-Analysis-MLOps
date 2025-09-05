@@ -23,6 +23,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh '''
+                    pip install --upgrade pip
                     pip install -r requirements.txt pytest httpx
                     export PYTHONPATH=$PWD
                     pytest tests/

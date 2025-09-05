@@ -15,8 +15,6 @@ pipeline {
                     pip install -r requirements.txt
                     export PYTHONPATH=$PWD
 
-                    python3 Scripts/train.py
-                    python3 Scripts/upload_model.py
                 '''
             }
         }

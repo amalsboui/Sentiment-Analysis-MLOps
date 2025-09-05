@@ -15,7 +15,7 @@ VECTORIZER_BLOB_NAME = "vectorizer.pkl"
 def upload_blob(local_path, blob_name):
     blob_service = BlobServiceClient.from_connection_string(AZURE_CONNECTION_STRING)
     container_client = blob_service.get_container_client(CONTAINER_NAME)
-    blob_client = container_client.get_blob_client(BLOB_NAME)
+    blob_client = container_client.get_blob_client(blob_name)
 
     with open(local_path, "rb") as data:
             blob_client.upload_blob(data, overwrite=True)

@@ -3,6 +3,8 @@ pipeline {
     environment {
         DOCKERHUB_CREDENTIALS = 'dockerhub-creds'
         AZURE_STORAGE_CONNECTION_STRING = credentials('AZURE_STORAGE_CONNECTION_STRING')
+        CONTAINER_NAME = "datasets"
+        BLOB_NAME = "IMDB_Dataset.csv"
     }
     stages {
 

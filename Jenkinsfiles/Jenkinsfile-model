@@ -8,11 +8,17 @@ pipeline {
 
         stage('Install dependencies') {
             steps {
-                sh 'python3 -m pip install --upgrade pip'
-                sh 'pip3 install pandas scikit-learn azure-storage-blob'
+                sh '''
+                    pip install --upgrade pip
+                    pip install -r requirements.txt
+                    export PYTHONPATH=$PWD
+
+                    python3 Scripts/train.py
+                    python3 Scripts/upload_model.py
+                '''
             }
         }
-        
+
         stage('Train Model') {
             steps {
                 echo "Training the model..."

@@ -24,3 +24,4 @@ def predict_sentiment(review: Review):
     vect = vectorizer.transform([review.text])
     sentiment = clf.predict(vect)[0]
     return{"sentiment": sentiment}
+    

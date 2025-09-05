@@ -5,6 +5,14 @@ pipeline {
         AZURE_STORAGE_CONNECTION_STRING = credentials('AZURE_STORAGE_CONNECTION_STRING')
     }
     stages {
+
+        stage('Install dependencies') {
+            steps {
+                sh 'python3 -m pip install --upgrade pip'
+                sh 'pip3 install pandas scikit-learn azure-storage-blob'
+            }
+        }
+        
         stage('Train Model') {
             steps {
                 echo "Training the model..."

@@ -5,6 +5,13 @@ pipeline {
         AZURE_STORAGE_CONNECTION_STRING = credentials('AZURE_STORAGE_CONNECTION_STRING')
     }
     stages {
+        stage('Train Model') {
+            steps {
+                echo "Training the model..."
+                sh 'python3 train.py'
+            }
+        }
+
         stage('Upload Model') {
             steps {
                 echo "Uploading model and vectorizer to Azure Blob..."

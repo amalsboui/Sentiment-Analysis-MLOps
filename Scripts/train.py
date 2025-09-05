@@ -8,7 +8,7 @@ import os
 
 #load data
 os.makedirs('./models', exist_ok=True)
-df = pd.read_csv("IMDB_DATASET.csv").sample(n=5000, random_state=42)
+df = pd.read_csv("../IMDB_Dataset.csv").sample(n=5000, random_state=42)
 
 # split data
 train_texts, test_texts, train_y, test_y = train_test_split(

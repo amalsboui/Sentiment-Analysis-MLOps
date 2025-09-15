@@ -1,17 +1,17 @@
 [![API Docker Image Version](https://img.shields.io/badge/sentimentapi-latest-blue?logo=docker)](https://hub.docker.com/repository/docker/hophopp/sentiment-api/tags)
+[![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://python.org)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.2%2B-orange?logo=scikit-learn)](https://scikit-learn.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.88%2B-teal?logo=fastapi)](https://fastapi.tiangolo.com)
+[![Docker](https://img.shields.io/badge/Docker-20.10%2B-blue?logo=docker)](https://docker.com)
+[![Jenkins](https://img.shields.io/badge/Jenkins-2.375%2B-red?logo=jenkins)](https://jenkins.io)
+[![Terraform](https://img.shields.io/badge/Terraform-1.3%2B-purple?logo=terraform)](https://terraform.io)
+[![Terraform Cloud](https://img.shields.io/badge/Terraform_Cloud-Workspace-purple?logo=terraform)](https://app.terraform.io)
+[![Azure Blob Storage](https://img.shields.io/badge/Azure_Storage-Blob_Container-blue?logo=microsoft-azure)](https://azure.microsoft.com)
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)](https://jupyter.org)
+[![Pandas](https://img.shields.io/badge/Pandas-1.5%2B-darkblue?logo=pandas)](https://pandas.pydata.org)
+[![NumPy](https://img.shields.io/badge/NumPy-1.23%2B-blue?logo=numpy)](https://numpy.org)
 
 # Sentiment Analysis MLOps Project
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
-![Terraform Cloud](https://img.shields.io/badge/Terraform_Cloud-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
-![Azure Blob Storage](https://img.shields.io/badge/Azure_Blob_Storage-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Numpy](https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ## Project Overview
 
 This project implements a Sentiment Analysis API using FastAPI, trained on the IMDB Movie Reviews dataset. The project showcases an end-to-end MLOps workflow:

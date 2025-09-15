@@ -2,6 +2,19 @@ import pytest
 from fastapi.testclient import TestClient
 from FastAPI.app import app  
 
+# Mock Model and vectorizer for unit testing
+class FakeVectorizer:
+    def transform(self, texts):
+        return texts
+
+class FakeModel:
+    def predict(self, X):
+        return ["positive" if "love" in x.lower() else "negative" for x in X]
+
+# Replace real Azure model with fake one
+app.clf = FakeModel()
+app.vectorizer = FakeVectorizer()
+
 client = TestClient(app)
 
 def test_predict_positive():

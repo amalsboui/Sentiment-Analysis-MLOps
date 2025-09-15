@@ -1,4 +1,4 @@
-[![API Docker Image Version](https://img.shields.io/badge/sentiment-api-latest-blue?logo=docker)](https://hub.docker.com/repository/docker/hophopp/sentiment-api/tags)
+[![API Docker Image Version](https://img.shields.io/badge/sentimentapi-latest-blue?logo=docker)](https://hub.docker.com/repository/docker/hophopp/sentiment-api/tags)
 
 # Sentiment Analysis MLOps Project
 ## Project Overview

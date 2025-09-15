@@ -1,5 +1,5 @@
 # Sentiment Analysis MLOps Project
-
+[Sentiment Analysis API on Docker Hub](https://hub.docker.com/repository/docker/hophopp/sentiment-api/general)
 ## Project Overview
 
 This project implements a Sentiment Analysis API using FastAPI, trained on the IMDB Movie Reviews dataset. The project showcases an end-to-end MLOps workflow:
@@ -19,6 +19,17 @@ The goal is to provide a robust pipeline from data preparation → model trainin
 - Contains 50,000 movie reviews labeled as positive or negative
 - For initial experimentation, we sampled 5,000 reviews
 - Reviews are preprocessed and used for training the model with a simple TF-IDF + classifier setup
+
+## Tech Stack & Tools
+
+This project leverages the following technologies:
+
+- **Programming / ML:** Python, Scikit-learn, TF-IDF  
+- **API / Web Service:** FastAPI  
+- **Containerization:** Docker  
+- **CI/CD Pipelines:** Jenkins  
+- **Cloud Infrastructure:** Terraform, Terraform Cloud  
+- **Cloud Storage:** Azure Blob Storage  
 
 ## Project Workflow
 

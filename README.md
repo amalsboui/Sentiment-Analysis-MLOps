@@ -1,5 +1,6 @@
+[![API Docker Image Version](https://img.shields.io/badge/frontend-latest-blue?logo=docker)](https://hub.docker.com/repository/docker/hophopp/sentiment-api/tags)
+
 # Sentiment Analysis MLOps Project
-[Sentiment Analysis API on Docker Hub](https://hub.docker.com/repository/docker/hophopp/sentiment-api/general)
 ## Project Overview
 
 This project implements a Sentiment Analysis API using FastAPI, trained on the IMDB Movie Reviews dataset. The project showcases an end-to-end MLOps workflow:

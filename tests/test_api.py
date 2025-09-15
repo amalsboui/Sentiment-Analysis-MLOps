@@ -1,6 +1,6 @@
 import pytest
 from fastapi.testclient import TestClient
-from FastAPI.app import app  
+from unittest.mock import patch
 
 # Mock Model and vectorizer for unit testing
 class FakeVectorizer:
@@ -14,6 +14,11 @@ class FakeModel:
 # Replace real Azure model with fake one
 app.clf = FakeModel()
 app.vectorizer = FakeVectorizer()
+
+# Patch the Azure-loading function before importing app
+with patch("FastAPI.app.load_blob_model") as mock_load:
+    mock_load.side_effect = lambda name: FakeModel() if "sentiment" in name else FakeVectorizer()
+    from FastAPI.app import app
 
 client = TestClient(app)
 

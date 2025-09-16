@@ -53,8 +53,6 @@ This project leverages the following technologies:
 - **Preprocessing** + TF-IDF vectorization
 - **Training** using Python scripts: `train.py` and `predict.py`
 
-# Sentiment Analysis MLOps
-
 ## 2. Model Storage
 
 Trained models are uploaded to Azure Blob Storage:

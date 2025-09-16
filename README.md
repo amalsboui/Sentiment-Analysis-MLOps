@@ -115,7 +115,7 @@ In the `main` branch, Terraform and Terraform Cloud are used to provision and ma
 2. **Storage Account**: Provides persistent storage for trained models and datasets.  
 3. **Blob Containers**:  
    - `models`: Stores trained model and vectorizer files.  
-   - `datasets`: Stores the dataset. When a dataset is uploaded, the model is automatically downloaded through the pipeline for API usage.  
+   - `datasets`: Stores the dataset. 
 
 
 ## Project Structure (Overview)

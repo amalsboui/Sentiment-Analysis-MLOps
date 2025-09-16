@@ -29,10 +29,11 @@ The goal is to provide a robust pipeline from data preparation → model trainin
 
 ## Dataset
 
-**IMDB Movie Reviews**
-- Contains 50,000 movie reviews labeled as positive or negative
-- For initial experimentation, we sampled 5,000 reviews
-- Reviews are preprocessed and used for training the model with a simple TF-IDF + classifier setup
+**IMDB Movie Reviews**  
+- Contains 50,000 movie reviews labeled as positive or negative  
+- For initial experimentation, we sampled 5,000 reviews  
+- Reviews are preprocessed and used for training the model with a simple TF-IDF + classifier setup  
+- Dataset available on Kaggle: [IMDB 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 
 ## Tech Stack & Tools
 

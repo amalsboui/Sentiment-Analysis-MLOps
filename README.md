@@ -122,6 +122,9 @@ In the `main` branch, Terraform and Terraform Cloud are used to provision and ma
 
 The following diagram illustrates the full MLOps workflow.
 
+<p align="center">
+  <img src="./pipelineee.png" alt="Project Pipeline" width="400"/>
+</p>
 
 
 

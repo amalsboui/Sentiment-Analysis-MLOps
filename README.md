@@ -161,3 +161,7 @@ cd Sentiment-Analysis-MLOps
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
+> ⚡ **Note**:  
+> This is the **production-ready branch** using **Azure Blob Storage** and **Terraform Cloud** for infrastructure and model storage.  
+> For a simplified local setup (model stored in GitHub, with unit & API tests included), check out the [`local`](https://github.com/amalsboui/Sentiment-Analysis-MLOps/tree/local) branch.

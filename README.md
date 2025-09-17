@@ -43,14 +43,13 @@ This setup is ideal for local development, testing, and experimentation.
 
 Sentiment-Analysis-MLOps/
 │
-├── FastAPI/ # FastAPI application
-├── models/ # Trained model + vectorizer (stored in GitHub)
-├── Scripts/ # Training and prediction scripts
-├── tests/ # Unit tests (model + API)
-├── Jenkinsfile # Jenkins pipeline (test + build + deploy)
-├── Dockerfile # Docker image definition
-├── requirements.txt
-└── Jupyter notebook
+├── FastAPI/             # FastAPI application
+├── models/              # Trained model + vectorizer (stored in GitHub)
+├── Scripts/             # Training and prediction scripts
+├── tests/               # Unit tests (model + API)
+├── Jenkinsfile          # Jenkins pipeline (test + build + deploy)
+├── Dockerfile           # Docker image definition
+├── requirements.txt     # Dependencies
+└── Jupyter notebook     # Initial experimentation
 
-## Project Structure (Local)
 

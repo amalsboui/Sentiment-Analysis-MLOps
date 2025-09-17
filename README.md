@@ -116,7 +116,13 @@ In the `main` branch, Terraform and Terraform Cloud are used to provision and ma
 2. **Storage Account**: Provides persistent storage for trained models and datasets.  
 3. **Blob Containers**:  
    - `models`: Stores trained model and vectorizer files.  
-   - `datasets`: Stores the dataset. 
+   - `datasets`: Stores the dataset.
+  
+## Project Pipeline
+
+The following diagram illustrates the full MLOps workflow.
+
+![Project Pipeline](./pipeline.png) 
 
 
 ## Project Structure (Overview)

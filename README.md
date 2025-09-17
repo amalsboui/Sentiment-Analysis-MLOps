@@ -56,13 +56,7 @@ This project leverages the following technologies:
 
 ## 2. Model Storage
 
-Trained models are uploaded to Azure Blob Storage:
-
-```python
-python Scripts/upload_model.py
-```
-
-**Future plan:** versioned storage & backup strategies
+Trained models are uploaded to Azure Blob Storage
 
 ## 3. FastAPI Application
 
@@ -123,7 +117,7 @@ In the `main` branch, Terraform and Terraform Cloud are used to provision and ma
 The following diagram illustrates the full MLOps workflow.
 
 <p align="center">
-  <img src="./pipelineee.png" alt="Project Pipeline" width="470"/>
+  <img src="./pipelineee.png" alt="Project Pipeline" width="485"/>
 </p>
 
 
